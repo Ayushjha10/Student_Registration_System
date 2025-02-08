@@ -65,7 +65,6 @@ function editStudent(index) {
 
     deleteStudent(index);
 }
-
 function deleteStudent(index) {
     let students = JSON.parse(localStorage.getItem("students")) || [];
     students.splice(index, 1);
@@ -79,5 +78,6 @@ function clearForm() {
     document.getElementById("studentEmail").value = "";
     document.getElementById("studentContact").value = "";
 }
+
 
 
